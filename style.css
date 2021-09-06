@@ -120,11 +120,11 @@ section .title::after{
     color: blueviolet;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: blueviolet;
 }
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: blueviolet;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -227,9 +227,7 @@ section .title::after{
 .about .about-content .right .text span{
     color: blueviolet;
 }
-.about .about-content .right p{
-    text-align: justify;
-}
+
 .about .about-content .right a{
     display: inline-block;
     transition: all 0.3s ease;
@@ -257,6 +255,7 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
 .services .serv-content .card:hover{
     background: blueviolet;
@@ -294,9 +293,7 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
-    text-align: justify;
-}
+
 .skills .skills-content .left a{
     display: inline-block;
     background: blueviolet;
@@ -356,9 +353,7 @@ section .title::after{
     width: 70%;
 }
 /* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
+
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -551,7 +546,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: white;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
