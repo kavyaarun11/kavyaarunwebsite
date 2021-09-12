@@ -33,14 +33,14 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.home, .about, .services, .skills, .teams, .contact, footer, .navbar{
+.home, .about, .work, .skills, .photos, .connect, footer, .navbar{
     font-family: 'IBM Plex Mono', monospace;
     position: relative;
 }
 .about .about-content,
-.services .serv-content,
+.work .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.connect .connect-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -161,7 +161,6 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
     color: black;
     min-height: 500px;
@@ -238,17 +237,17 @@ section .title::after{
     color: #FF6666;
     background: none;
 }
-/* services section styling */
-.services, .teams{
+/* work section styling */
+.work, .photos{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.work .title::before,
+.photos .title::before{
     background: #fff;
 }
 
-.services .serv-content .card{
+.work .serv-content .card{
     width: 300px;
     height: 400px;
     background: #222;
@@ -259,28 +258,29 @@ section .title::after{
     transition: all 0.3s ease;
     margin-bottom: 20px;
 }
-.services .serv-content .card:hover{
+.work .serv-content .card:hover{
     background: #FF6666;
     content: "";
 }
-.services .serv-content .card:hover::after{
+.work .serv-content .card:hover::after{
     content: "";
 }
-.services .serv-content .card .box{
+
+.work .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.work .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.work .serv-content .card i{
     font-size: 50px;
     color: #FF6666;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.work .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.work .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -354,9 +354,9 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 70%;
 }
-/* teams section styling */
+/* photos section styling */
 
-.teams .carousel .card{
+.photos .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -364,32 +364,32 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.photos .carousel .card:hover{
     background: #FF6666;
 }
-.teams .carousel .card .box{
+.photos .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.photos .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.photos .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.photos .carousel .card img{
     height: 300px;
     width: 300px;
     object-fit: cover;
     border: 1px solid white;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.photos .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -413,23 +413,23 @@ section .title::after{
 .owl-dot:hover{
     background: #FF6666!important;
 }
-/* contact section styling */
+/* connect section styling */
 
-.contact .contact-content .column{
+.connect .connect-content .column{
     width: calc(50% - 30px);
 }
-.contact .contact-content .text{
+.connect .connect-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .contact-content .left p{
+.connect .connect-content .left p{
     text-align: justify;
 }
-.contact .contact-content .left .icons{
+.connect .connect-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .row{
+.connect .connect-content .row{
     display: flex;
     height: 65px;
     align-items: center;
@@ -439,36 +439,36 @@ section .title::after{
     padding: 0;
     margin: 0;
 }
-.contact .contact-content .row .info{
+.connect .connect-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
+.connect .connect-content .row i{
     font-size: 25px;
     color: #FF6666;
 }
-.contact .contact-content .row li{
+.connect .connect-content .row li{
     list-style: none;
     margin: 0 10px;
 }
-.contact .contact-content .row li .fab{
+.connect .connect-content .row li .fab{
     color: #000000;
     font-size: 25px;
     line-height: 50px;
     transition: .5s;
 }
-.contact .contact-content .row li .fas{
+.connect .connect-content .row li .fas{
     color: #000000;
     font-size: 25px;
     line-height: 50px;
     transition: .5s;
 }
-.contact .contact-content .row li .fab:hover{
+.connect .connect-content .row li .fab:hover{
     color: #ffffff;
 }
-.contact .contact-content .row li .fas:hover{
+.connect .connect-content .row li .fas:hover{
     color: #ffffff;
 }
-.contact .contact-content .row li a{
+.connect .connect-content .row li a{
     position: relative;
     display: block;
     width: 50px;
@@ -480,51 +480,51 @@ section .title::after{
     transform: translate(0,0px);
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.contact .contact-content .row li a:hover{
+.connect .connect-content .row li a:hover{
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
-.contact .contact-content .row li:nth-child(1) a:hover{
+.connect .connect-content .row li:nth-child(1) a:hover{
     background-color: #190aa5;
 }
-.contact .contact-content .row li:nth-child(2) a:hover{
+.connect .connect-content .row li:nth-child(2) a:hover{
     background-color: #a50a0a;
 }
-.contact .contact-content .row li:nth-child(3) a:hover{
+.connect .connect-content .row li:nth-child(3) a:hover{
     background-color: #0077B5;
 }
-.contact .contact-content .row li:nth-child(4) a:hover{
+.connect .connect-content .row li:nth-child(4) a:hover{
     background-color: #e4405f;
 }
-.contact .contact-content .row li:nth-child(5) a:hover{
+.connect .connect-content .row li:nth-child(5) a:hover{
     background-color: #6cc644;
 }
-.contact .contact-content .row li:nth-child(6) a:hover{
+.connect .connect-content .row li:nth-child(6) a:hover{
     background-color: #55acee;
 }
-.contact .contact-content .info .head{
+.connect .connect-content .info .head{
     font-weight: 500;
 }
-.contact .contact-content .info .sub-title{
+.connect .connect-content .info .sub-title{
     color: #333;
 }
-.contact .right form .fields{
+.connect .right form .fields{
     display: flex;
 }
-.contact .right form .field,
-.contact .right form .fields .field{
+.connect .right form .field,
+.connect .right form .fields .field{
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
-.contact .right form .textarea{
+.connect .right form .textarea{
     height: 80px;
     width: 100%;
 }
-.contact .right form .name{
+.connect .right form .name{
     margin-right: 10px;
 }
-.contact .right form .field input,
-.contact .right form .textarea textarea{
+.connect .right form .field input,
+.connect .right form .textarea textarea{
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
@@ -535,15 +535,15 @@ section .title::after{
     font-family: 'IBM Plex Mono', monospace;
     transition: all 0.3s ease;
 }
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
+.connect .right form .field input:focus,
+.connect .right form .textarea textarea:focus{
     border-color: #b3b3b3;
 }
-.contact .right form .textarea textarea{
+.connect .right form .textarea textarea{
   padding-top: 10px;
   resize: none;
 }
-.contact .right form .button-area{
+.connect .right form .button-area{
   display: flex;
   align-items: center;
 }
@@ -646,12 +646,12 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .work .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
     .skills .skills-content .column,
-    .contact .contact-content .column{
+    .connect .connect-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
@@ -669,7 +669,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .work .serv-content .card{
         width: 100%;
     }
 }
@@ -684,11 +684,11 @@ footer span a:hover{
     .skills .skills-content .left .text{
         font-size: 19px;
     }
-    .contact .right form .fields{
+    .connect .right form .fields{
         flex-direction: column;
     }
-    .contact .right form .name,
-    .contact .right form .email{
+    .connect .right form .name,
+    .connect .right form .email{
         margin: 0;
     }
     .right form .error-box{
