@@ -7,6 +7,12 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    background: black;
+}
+p{
+    color:white;
+}
 html{
     scroll-behavior: smooth;
     height: 100%;
@@ -37,6 +43,10 @@ section{
     font-family: 'IBM Plex Mono', monospace;
     position: relative;
 }
+.about, .work, .skills, .photos, .connect, footer, .navbar{
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+}
 .about .about-content,
 .work .serv-content,
 .skills .skills-content,
@@ -53,6 +63,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
+    color: white;
 }
 section .title::before{
     content: "";
@@ -61,7 +72,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: white;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -69,7 +80,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #FF6666;
+    color: #fc004c;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -88,7 +99,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: white;
+    background: black;
 }
 .navbar .max-width{
     display: flex;
@@ -100,11 +111,11 @@ section .title::after{
     max-height: 25%;
 }
 .navbar .logo a span{
-    color: #FF6666;
+    color: #fc004c;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: black;
+    color: white;
 }
 .navbar .menu li{
     list-style: none;
@@ -112,21 +123,21 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #FF6666;
+    color: #fc004c;
 }
 .navbar.sticky .menu li a:hover{
-    color: #FF6666;
+    color: #fc004c;
 }
 /* menu btn styling */
 .menu-btn{
-    color: #FF6666;
+    color: #fc004c;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -135,7 +146,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #FF6666;
+    background: #fc004c;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -162,7 +173,7 @@ section .title::after{
 .home{
     display: flex;
     height: 100vh;
-    color: black;
+    color: white;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -187,23 +198,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #FF6666;
+    color: #fc004c;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #FF6666;
-    color: black;
+    background: #fc004c;
+    color: white;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #FF6666;
+    border: 2px solid #fc004c;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #FF6666;
+    color: #fc004c;
     background: none;
 }
 /* about section styling */
@@ -226,7 +237,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #FF6666;
+    color: #fc004c;
 }
 
 .about .about-content .right a{
@@ -234,7 +245,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: #FF6666;
+    color: #fc004c;
     background: none;
 }
 /* work section styling */
@@ -245,6 +256,9 @@ section .title::after{
 .work .title::before,
 .photos .title::before{
     background: #fff;
+}
+.card{
+    position:relative;
 }
 
 .work .serv-content .card{
@@ -259,7 +273,7 @@ section .title::after{
     margin-bottom: 20px;
 }
 .work .serv-content .card:hover{
-    background: #FF6666;
+    background: #fc004c;
     content: "";
 }
 .work .serv-content .card:hover::after{
@@ -274,7 +288,7 @@ section .title::after{
 }
 .work .serv-content .card i{
     font-size: 50px;
-    color: #FF6666;
+    color: #fc004c;
     transition: color 0.3s ease;
 }
 .work .serv-content .card:hover i{
@@ -294,22 +308,23 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #fc004c;
 }
 
 .skills .skills-content .left a{
     display: inline-block;
-    background: #FF6666;
+    background: #fc004c;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #FF6666;
+    border: 2px solid #fc004c;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: #FF6666;
+    color: #fc004c;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -324,6 +339,7 @@ section .title::after{
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
+    color:white;
 }
 .skills .skills-content .right .line{
     height: 5px;
@@ -337,7 +353,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: #FF6666;
+    background: #fc004c;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -365,7 +381,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .photos .carousel .card:hover{
-    background: #FF6666;
+    background: #fc004c;
 }
 .photos .carousel .card .box{
     display: flex;
@@ -402,7 +418,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid #FF6666!important;
+    border: 2px solid #fc004c!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -411,7 +427,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: #FF6666!important;
+    background: #fc004c!important;
 }
 /* connect section styling */
 
@@ -444,7 +460,7 @@ section .title::after{
 }
 .connect .connect-content .row i{
     font-size: 25px;
-    color: #FF6666;
+    color: #fc004c;
 }
 .connect .connect-content .row li{
     list-style: none;
@@ -558,12 +574,12 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #FF6666;
-  border: 2px solid #FF6666;
+  background: #fc004c;
+  border: 2px solid #fc004c;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: #FF6666;
+  color: #fc004c;
   background: none;
 }
 /* footer section styling */
@@ -704,14 +720,14 @@ footer span a:hover{
     }
 }
 p .uwaterloo-link {
-    background: linear-gradient(45deg,#FFD54F 0%,#E4B429 33.33%, #787878 66.67%, #000000 100%);
+    background: linear-gradient(45deg,#FFD54F 0%,#E4B429 33.33%, #787878 66.67%, #eeebeb 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 p .deloitte-link {
-    background: linear-gradient(45deg,#025725 0%,#07a70f 33.33%, #023655 66.67%, #000000 100%);
+    background: linear-gradient(45deg,#0ad35e 0%,#07a70f 33.33%, #1683c2 66.67%, #dddcdc 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -805,7 +821,8 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    opacity: 0.48;
+    opacity: 0.98;
+    background-color: black;
 }
 canvas {
     display:block;
@@ -816,4 +833,27 @@ canvas {
 
 .main-sec{
     overflow: hidden;
+}
+
+.card-content {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: gray;
+    display: none;
+}
+
+.card:hover .card-content 
+    {
+    display: block;
+    z-index:11;
+    border-radius: 6px;
+    }
+
+a:hover{
+    -webkit-text-fill-color: #fc004c;
 }
