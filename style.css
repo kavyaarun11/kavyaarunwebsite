@@ -1,6 +1,6 @@
-
-/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -40,11 +40,11 @@ section{
     margin: auto;
 }
 .home, .about, .work, .skills, .photos, .connect, footer, .navbar{
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Space Mono', monospace;
     position: relative;
 }
 .about, .work, .skills, .photos, .connect, footer, .navbar{
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Space Mono', monospace;
     position: relative;
 }
 .about .about-content,
@@ -626,6 +626,7 @@ footer span a:hover{
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
+        background: black;
     }
     .navbar .menu.active{
         left: 0;
