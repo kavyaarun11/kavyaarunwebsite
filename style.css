@@ -856,5 +856,13 @@ canvas {
     }
 
 a:hover{
+    -webkit-text-fill-color: #fc004c;
+}
+
+.box .text:hover{
     -webkit-text-fill-color: white;
+}
+
+.work .serv-content .card .text:hover {
+    color:white;
 }
