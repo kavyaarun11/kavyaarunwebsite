@@ -402,8 +402,9 @@ section .title::after{
     height: 300px;
     width: 300px;
     object-fit: cover;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     transition: all 0.3s ease;
+    border-radius: 0.2cm;
 }
 .photos .carousel .card:hover img{
     border-color: #fff;
@@ -844,16 +845,56 @@ canvas {
     right: 0;
     bottom: 0;
     vertical-align: middle;
-    background-color: gray;
+    background-color: #fc004c;
     display: none;
 }
 
 .card:hover .card-content 
-    {
+{
     display: block;
     z-index:11;
     border-radius: 6px;
-    }
+    margin-top: 27px;
+}
+
+.card-content1{
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: #fc004c;
+    opacity:0.98;
+    display: none;
+}
+    
+.card:hover .card-content1 {
+    display: block;
+    z-index:11;
+    border-radius: 6px;
+}
+
+.card-content2{
+    position: absolute;
+    margin: 0;
+    top: 111px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: white;
+    opacity:0.98;
+    display: none;
+}
+    
+.card:hover .card-content2 {
+    display: block;
+    z-index:11;
+    border-radius: 6px;
+}
+    
 
 a:hover{
     -webkit-text-fill-color: #fc004c;
