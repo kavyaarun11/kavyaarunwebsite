@@ -8,10 +8,10 @@
     text-decoration: none;
 }
 body{
-    background: black;
+    background: white;
 }
 p{
-    color:white;
+    color:black;
 }
 html{
     scroll-behavior: smooth;
@@ -63,7 +63,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    color: white;
+    color: black;
 }
 section .title::before{
     content: "";
@@ -80,7 +80,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #fc004c;
+    color: #00a1ff;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -99,7 +99,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: black;
+    background: white;
 }
 .navbar .max-width{
     display: flex;
@@ -111,7 +111,7 @@ section .title::after{
     max-height: 25%;
 }
 .navbar .logo a span{
-    color: #fc004c;
+    color: #00a1ff;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -123,21 +123,21 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: white;
+    color: rgb(22, 21, 21);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #fc004c;
+    color: #00a1ff;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fc004c;
+    color: #00a1ff;
 }
 /* menu btn styling */
 .menu-btn{
-    color: #fc004c;
+    color: #00a1ff;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -146,7 +146,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #fc004c;
+    background: #00a1ff;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -173,7 +173,7 @@ section .title::after{
 .home{
     display: flex;
     height: 100vh;
-    color: white;
+    color: black;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -198,23 +198,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #fc004c;
+    color: #00a1ff;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #fc004c;
+    background: #00a1ff;
     color: white;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #fc004c;
+    border: 2px solid #00a1ff;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #fc004c;
+    color: #00a1ff;
     background: none;
 }
 /* about section styling */
@@ -237,7 +237,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #fc004c;
+    color: #00a1ff;
 }
 
 .about .about-content .right a{
@@ -245,13 +245,13 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: #fc004c;
+    color: #00a1ff;
     background: none;
 }
 /* work section styling */
 .work, .photos{
-    color:#fff;
-    background: #111;
+    color:black;
+    background: #fbfbfb;
 }
 .work .title::before,
 .photos .title::before{
@@ -264,7 +264,7 @@ section .title::after{
 .work .serv-content .card{
     width: 300px;
     height: 400px;
-    background: #222;
+    background: #efefef;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -273,7 +273,7 @@ section .title::after{
     margin-bottom: 20px;
 }
 .work .serv-content .card:hover{
-    background: #fc004c;
+    background: #00a1ff;
     content: "";
 }
 .work .serv-content .card:hover::after{
@@ -288,7 +288,7 @@ section .title::after{
 }
 .work .serv-content .card i{
     font-size: 50px;
-    color: #fc004c;
+    color: #00a1ff;
     transition: color 0.3s ease;
 }
 .work .serv-content .card:hover i{
@@ -308,23 +308,23 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #fc004c;
+    color: #00a1ff;
 }
 
 .skills .skills-content .left a{
     display: inline-block;
-    background: #fc004c;
+    background: #00a1ff;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #fc004c;
+    border: 2px solid #00a1ff;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: #fc004c;
+    color: #00a1ff;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -339,7 +339,7 @@ section .title::after{
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
-    color:white;
+    color:black;
 }
 .skills .skills-content .right .line{
     height: 5px;
@@ -353,7 +353,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: #fc004c;
+    background: #00a1ff;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -373,7 +373,7 @@ section .title::after{
 /* photos section styling */
 
 .photos .carousel .card{
-    background: #222;
+    background: #efefef;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -381,7 +381,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .photos .carousel .card:hover{
-    background: #fc004c;
+    background: #00a1ff;
 }
 .photos .carousel .card .box{
     display: flex;
@@ -419,7 +419,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid #fc004c!important;
+    border: 2px solid #00a1ff!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -428,7 +428,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: #fc004c!important;
+    background: #00a1ff!important;
 }
 /* connect section styling */
 
@@ -461,7 +461,7 @@ section .title::after{
 }
 .connect .connect-content .row i{
     font-size: 25px;
-    color: #fc004c;
+    color: #00a1ff;
 }
 .connect .connect-content .row li{
     list-style: none;
@@ -575,12 +575,12 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #fc004c;
-  border: 2px solid #fc004c;
+  background: #00a1ff;
+  border: 2px solid #00a1ff;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: #fc004c;
+  color: #00a1ff;
   background: none;
 }
 /* footer section styling */
@@ -627,7 +627,7 @@ footer span a:hover{
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
-        background: black;
+        background: white;
     }
     .navbar .menu.active{
         left: 0;
@@ -722,21 +722,21 @@ footer span a:hover{
     }
 }
 p .uwaterloo-link {
-    background: linear-gradient(45deg,#FFD54F 0%,#E4B429 33.33%, #787878 66.67%, #eeebeb 100%);
+    background: linear-gradient(45deg,#FFD54F 0%,#E4B429 33.33%, #787878 66.67%, #000000 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 p .deloitte-link {
-    background: linear-gradient(45deg,#0ad35e 0%,#07a70f 33.33%, #1683c2 66.67%, #dddcdc 100%);
+    background: linear-gradient(45deg,#0ad35e 0%,#07a70f 33.33%, #026096 66.67%, #000000 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 p .rbc-link {
-    background: linear-gradient(45deg,#005DAA 50%, #FFD200 100%);
+    background: linear-gradient(45deg,#005DAA 50%, #856d06 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -824,7 +824,7 @@ a {
     background-size: cover;
     background-position: 50% 50%;
     opacity: 0.98;
-    background-color: black;
+    background-color: white;
 }
 canvas {
     display:block;
@@ -845,7 +845,7 @@ canvas {
     right: 0;
     bottom: 0;
     vertical-align: middle;
-    background-color: #fc004c;
+    background-color: #00a1ff;
     display: none;
 }
 
@@ -865,7 +865,7 @@ canvas {
     right: 0;
     bottom: 0;
     vertical-align: middle;
-    background-color: #fc004c;
+    background-color: #00a1ff;
     opacity:0.98;
     display: none;
 }
@@ -905,7 +905,7 @@ canvas {
     
 
 a:hover{
-    -webkit-text-fill-color: #fc004c;
+    -webkit-text-fill-color: black;
 }
 
 .box .text:hover{
@@ -944,7 +944,7 @@ display:inline-block;
    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
    text-align:center;
    transition: all 0.2s;
-   margin-right: 0px;
+   margin-right: 6px;
 } 
 
 a.card-button2{

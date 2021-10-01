@@ -16,20 +16,20 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 90,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#fc004c"
+        "value": "#00a1ff"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#fc004c"
+          "color": "#00a1ff"
         },
         "polygon": {
           "nb_sides": 5
@@ -41,7 +41,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.4,
         "random": false,
         "anim": {
           "enable": false,
@@ -55,7 +55,7 @@ particlesJS('particles-js',
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 49,
           "size_min": 0.1,
           "sync": false
         }
@@ -63,8 +63,8 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#595959",
-        "opacity": 0.4,
+        "color": "#bdbbbb",
+        "opacity": 0.45,
         "width": 1
       },
       "move": {
